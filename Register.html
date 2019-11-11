@@ -1,21 +1,45 @@
-<html>
+<html style="background-color: cornflowerblue;">
     <head>
+            <h1 style="color:brown;"; align="center">Welcome to my web page</h1>
+
     <title>REGISTRATION Page</title>
     </head>
-    <body align="center">
+    <body>
+            <a href="home.html">Home</a>&nbsp;&nbsp;
+            <a href="Login.html">Login</a>&nbsp;&nbsp;
+            <a href="Register.html">Register</a>&nbsp;&nbsp;
+            <a href="Contact.html">ContactUs</a>&nbsp;&nbsp;
+        <form align="center">
             <h1>Registration Form</h1>
-            FirstName:    <input type="text" name="t1" /><br></br>
-            LastName:    <input type="text" name="t2" /><br></br>
-            UserName:    <input type="text" name="t3" /><br></br>
+            FirstName:    <input type="text" name="FirstName" /><br></br>
+            LastName:    <input type="text" name="LastName" /><br></br>
+            UserName:    <input type="text" name="UserName" /><br></br>
             PassWord:    <input type="password" name="PassWord" /><br></br>
-            Email:       <input type="text" name="t5" /><br></br>
-            Gender:   <label for="male">Male</label>
-            <input type="radio" name="Gender" id="male" value="male"><br>
-                       <lable for="female">?Female</lable>
-                         <input type="radio" name="Gender" id="female"/></br></br>
-            MobileNumber:  <input type="text" name="t6"/></br></br>
+            Email:       <input type="text" name="Email" /><br></br>
+            Gender:    <input type="radio" name="Gender" id="male" value="male">
+                       <label for="male">Male</label>
+                         <input type="radio" name="Gender" id="female" value="female"/>
+                         <lable for="female">Female</lable><br><br>
+                         <lable>Country: </lable>
+                         <select>
+                             <option>select your country</option>
+                             <option value="India">india</option>
+                             <option value="USA">USA</option>
+                             <option value="UK">United Kingdom</option>
+                             <option value="Australia">Australia</option><br>
+                         </select><br><br>
+                         <lable>Qualification:</lable>
+                         <input type="checkbox" name="Qualification" value="SSC"> SSC
+                         <input type="checkbox" name="Qualification" value="INTER"> INTER
+                         <input type="checkbox" name="Qualification" value="Diploma"> DIPLOMA<br>
+                         &nbsp;&nbsp;            <input type="checkbox" name="Qualification" value="Degree"> DEGREE
+                         <input type="checkbox" name="Qualification" value="Btech"> BTECH
+                         <input type="checkbox" name="Qualification" value="Mtech"> MTECH<br><br>
+                          MobileNumber:  <input type="text" name="MobileNumber"/></br></br>
+                            <lable>Message:</lable>
+                            <textarea>  </textarea><br><br>
             &nbsp;&nbsp; <input type="submit" value="Register">
             &nbsp;       <input type="reset" value="Cancle">
-            
+           </form> 
     </body>
 </html>

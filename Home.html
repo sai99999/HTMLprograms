@@ -1,13 +1,10 @@
-<html>
+<html style="background-color:hotpink;">
     <head>
-        <h1 style="color:red;"; align="center">Welcome to my web page</h1>
+        <h1 style="color:indigo;"; align="center">Welcome to my web page</h1>
         <style>
         td{
             text-align: center;
             /* font-weight: bold; */
-        }
-        th{
-            background-color:blue;
         }
         table{
             border-collapse: collapse;
@@ -15,9 +12,7 @@
              style= border: 2px solid DodgerBlue;"
 
         }
-        div{
-            margin-bottom: 90px;
-        }
+        
         </style>
     </head>
     <body>
@@ -97,18 +92,35 @@ password:    <input type="text" name="t2" /><br>
     <br>
 <br>    
 </div>
-<div  id= div; align="left"> 
-<h1>Create Your Account</h1>
-FirstName:    <input type="text" name="t1" /><br><br>
-LastName:    <input type="text" name="t2" /><br><br>
-UserName:    <input type="text" name="t3" /><br><br>
-PassWord:    <input type="password" name="PassWord" /><br><br>
-Email:       <input type="text" name="t5" /><br><br>
-Gender:      <input type="radio" name="Gender" value="male" />Male
-             <input type="radio" name="Gender" value="female"/>Female<br><br>
-MobileNumber:  <input type="text" name="t6"/><br><br>
-&nbsp;&nbsp; <input type="submit" value="Create Account">
-&nbsp;       <input type="reset" value="Clear Form">
-</div>
-    </body>
-</html>
+<form align="left">
+        <h1>Registration Form</h1>
+        FirstName:    <input type="text" name="FirstName" /><br></br>
+        LastName:    <input type="text" name="LastName" /><br></br>
+        UserName:    <input type="text" name="UserName" /><br></br>
+        PassWord:    <input type="password" name="PassWord" /><br></br>
+        Email:       <input type="text" name="Email" /><br></br>
+        Gender:    <input type="radio" name="Gender" id="male" value="male">
+                   <label for="male">Male</label>
+                     <input type="radio" name="Gender" id="female" value="female"/>
+                     <lable for="female">Female</lable><br><Br>
+                     <lable>Country: </lable>
+                     <select>
+                         <option>select your country</option>
+                         <option value="India">india</option>
+                         <option value="USA">USA</option>
+                         <option value="UK">United Kingdom</option>
+                         <option value="Australia">Australia</option><br>
+                     </select><br><br>
+                     <lable>Qualification:</lable>
+                     <input type="checkbox" name="Qualification" value="SSC"> SSC
+                     <input type="checkbox" name="Qualification" value="INTER"> INTER
+                     <input type="checkbox" name="Qualification" value="Diploma"> DIPLOMA<br>
+                     &nbsp;&nbsp;            <input type="checkbox" name="Qualification" value="Degree"> DEGREE
+                     <input type="checkbox" name="Qualification" value="Btech"> BTECH
+                     <input type="checkbox" name="Qualification" value="Mtech"> MTECH<br><br>
+                      MobileNumber:  <input type="text" name="MobileNumber"/></br></br>
+                        <lable>Message:</lable>
+                        <textarea>  </textarea><br><br>
+        &nbsp;&nbsp; <input type="submit" value="Register">
+        &nbsp;       <input type="reset" value="Cancle">
+       </form>
